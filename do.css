@@ -62,6 +62,7 @@ li {
     font-size: 15px;
     position: relative;
     text-align: center;
+    color: white;
 }
 li::before {
     position: absolute;
