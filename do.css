@@ -1,0 +1,116 @@
+body {
+    background: aliceblue;
+}
+.do {
+    display: flex;
+    justify-content: center;
+}
+#To-Do-List {
+    width: 360px;
+    text-align: center;
+    padding: 33px;
+    margin-left: 33px;
+    margin-top: 33px;
+    background: aquamarine;
+    border-radius: 10px;
+}
+#To-Do-List h2 {
+    background: #ffa500de;
+    border-radius: 18px;
+    padding: 5px;
+}
+.input{
+    display: flex;
+}
+input#inputs {
+    width: 225px;
+    padding: 7px 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    /* display: flex; */
+    margin: 0px 6px;
+}
+button {
+    width: 53px;
+    padding: 3px;
+    background: black;
+    border: 1px solid black;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ul.text {
+    margin: 0;
+    padding: 0;
+}
+
+li button {
+    position: absolute;
+    right: 13px;
+    top: 8px;
+}
+li {
+    list-style: none;
+    background: cadetblue;
+    padding: 11px 0px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+}
+li::before {
+    position: absolute;
+    content: "";
+    background-image: url(image/check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    height: 26px;
+    width: 26px;
+    top: 8px;
+    left: 6px;
+}
+
+@media (min-width: 320px) and (max-width:720px){
+
+    .do {
+    margin: 14px;
+    justify-content: center;
+}
+#To-Do-List {
+    width: 360px;
+    text-align: center;
+    padding: 33px;
+    margin-left: 33px;
+    margin-top: 33px;
+    background: aquamarine;
+    border-radius: 10px;
+}
+input#inputs {
+    width: 100%;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    margin: 0px 4px;
+}
+button {
+    width: 53px;
+    padding: 3px;
+    background: black;
+    border: 1px solid black;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+}
