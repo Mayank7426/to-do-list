@@ -77,6 +77,10 @@ li::before {
     top: 8px;
     left: 6px;
 }
+ul li.checked{
+    color: black;
+    text-decoration: line-through;
+}
 
 @media (min-width: 320px) and (max-width:720px){
 

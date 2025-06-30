@@ -17,7 +17,10 @@
     }
 
     text.addEventListener("click", function(e){
-        if(e.target.tagName === "BUTTON"){
+        if(e.target.tagName === "LI"){
+            e.target.classList.toggle("checked");
+            Save();
+        }else  if(e.target.tagName === "BUTTON"){
             e.target.parentElement.remove();
             Save();
         }
